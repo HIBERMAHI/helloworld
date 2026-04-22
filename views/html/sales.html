@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/sales.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="eleme"  >
+          <img class="square"  src="/images/zang.jpg" alt="picture">
+          <p>MAGEZI HIBER: Project manager</p>
+        </div>
+        <div class="boa">
+        <div class="board" >
+          <a href="index.html">Dashboard</a>
+        </div>
+        <div class="board" >
+          <a href="Ssales.html">Management</a>
+        </div>
+        <div class="board" >
+          <a href="gid.html">Supplier</a>
+        </div>
+        </div>
+      </div>
+      <div class="content">
+        <!--section-->
+        <section>
+          <form action="/sales" method="post">
+            <h1 class="title"  >Sales Registration</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="salesdate">Sales Date</label>
+                <input type="date" id="salesdate" name="salesdate"/>
+              </div>
+              <!-- <div class="input-section">
+                <label for="salesperson">Salesperson</label>
+                <select class="select" name="salesperson">
+                  <option value="" disabled selected>Salesrepresentative</option>
+                  <option value="1">hiber</option>
+                  <option value="2">mag</option>
+                </select>
+              </div> -->
+            </div>
+            <h2 class="title"  >Customer Details</h2>
+            <div class="select-container">
+              <div class="select-label">
+                <label>Full Name</label>
+                <input type="text" id="fname" placeholder="Enter full name"  name="fullname" />
+              </div>
+              <div class="select-label">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter email" name="email"/>
+              </div>
+              <div class="select-label">
+                <label for="phone">Phone Number</label>
+                <input type="number" id="phone" placeholder="Enter phone number" name="phonenumber" />
+              </div>
+              <!-- <div class="select-label">
+                <label for="type">Type</label>
+                <select class="select" name="customertype" >
+                  <option value="" disabled selected>Select customer type</option>
+                  <option value="1">food</option>
+                  <option value="2">sausage</option>
+                </select>
+              </div> -->
+            </div>
+            <h3  class="title">Items</h3>
+            <div class="item-container" >
+              <div class="item-select" >
+                <label for="pdt">Pdt Id</label>
+                <input type="text" id="pdt" placeholder="pdt ID" name="Pdt-Id" />
+              </div>
+              <div class="item-select" >
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity"  name="quantity" />
+              </div>
+              <div class="item-select" >
+                <label for="unitp">Unit Price</label>
+                <input type="number" id="unitp" name="unitprice" />
+              </div>
+              <div class="item-select" >
+                <label for="pd">Product ID</label>
+                <input type="text" id="pd" placeholder="pdt ID" name="productId" />
+              </div>
+              <div class="item-select" >
+                <label for="qty">Quantity</label>
+                <input type="number" id="qty" name="quantity" />
+              </div>
+              <div  class="item-select" >
+                <label for="unitp">Unit Price</label>
+                <input type="number" id="unitp" name="unitprice"/>
+              </div>
+            </div>
+            <div class="butt" >
+              <button  class="can" type="button"  >Cancel</button>
+              <button class="submit"  type="submit" >Submit</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>

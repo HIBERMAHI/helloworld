@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+display: flex;
+height: auto;
+width: 100%;
+}
+form{
+    margin: 10px 80px;
+    height: 100%;
+    background-color: rgb(249, 247, 246);
+}
+.sidebar{
+    flex: 1;
+    border: 1px solid rgb(16, 0, 0);
+    background-color: rgb(251, 249, 249);
+}
+.content{
+    flex: 3;
+    background-color: rgb(254, 253, 253);
+}
+.input-container{
+    display: flex;
+    column-gap: 5px;
+    
+
+}
+.input-section{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    margin-left: 5px;
+    
+}
+.input-section input{
+    height: 2rem;
+}
+.select-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 5px;
+    
+}
+.select-label{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 48%;
+    margin-left: 5px;
+    justify-content: space-between;
+}
+.select-label input{
+    height: 2rem;
+}
+.select{
+    height: 2.3rem;
+}
+.item-container{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+}
+.item-select{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 30%;
+    margin-left: 10px;
+}
+.item-select input{
+    height: 2rem;
+}
+.butt{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 10px;
+}
+.can{
+    width: 17rem;
+    border: 1px solid rgb(134, 134, 224);
+    color: rgb(7, 7, 139);
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 5px;
+    height: 40px;
+    transition: opacity 0.1s;
+}
+.can:hover{
+    background-color: rgb(126, 185, 185);
+    opacity: 0.8;
+}
+.can:active{
+    opacity: 0.5;
+}
+.submit{
+    width: 17rem;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgb(7, 7, 235);
+    border: none;
+    border-radius:5px ;
+    height: 40px;
+    transition: opacity 0.15s;
+}
+.submit:hover{
+    opacity: 0.8;
+}
+.submit:active{
+    opacity: 0.5;
+}
+.title{
+    text-align: center;
+    margin-right: 60px;
+    font-style: italic;
+}
+.eleme{
+    display: flex;
+    margin: 10px  50px;
+}
+.square{
+    width: 60px;
+    height: 60px;
+    border-radius:50%;
+    border: 1px solid rgb(165, 161, 161);
+    margin-right: 10px;
+    background-color: rgb(205, 201, 201);
+}
+.board a{
+    display: block;
+    text-decoration: none;
+padding: 5px 40px  ;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: rgb(22, 1, 22);
+height: 3rem;
+}
+.boa{
+    margin-top: 30px;
+    align-items: center;
+}

@@ -1,0 +1,79 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(rel='stylesheet' href='/css/sales.css')
+.container
+  .sidebar
+    .eleme
+      img.square(src='/images/zang.jpg' alt='picture')
+      p MAGEZI HIBER: Project manager
+    .boa
+      .board
+        a(href='index.html') Dashboard
+      .board
+        a(href='Ssales.html') Management
+      .board
+        a(href='gid.html') Supplier
+  .content
+    // section
+    section
+      form(action='/sales' method='post')
+        h1.title Sales Registration
+        .input-container
+          .input-section
+            label(for='salesdate') Sales Date
+            input#salesdate(type='date' name='salesdate')
+          //
+            <div class="input-section">
+            <label for="salesperson">Salesperson</label>
+            <select class="select" name="salesperson">
+            <option value="" disabled selected>Salesrepresentative</option>
+            <option value="1">hiber</option>
+            <option value="2">mag</option>
+            </select>
+            </div>
+        h2.title Customer Details
+        .select-container
+          .select-label
+            label Full Name
+            input#fname(type='text' placeholder='Enter full name' name='fullname')
+          .select-label
+            label(for='email') Email
+            input#email(type='email' placeholder='Enter email' name='email')
+          .select-label
+            label(for='phone') Phone Number
+            input#phone(type='number' placeholder='Enter phone number' name='phonenumber')
+          //
+            <div class="select-label">
+            <label for="type">Type</label>
+            <select class="select" name="customertype" >
+            <option value="" disabled selected>Select customer type</option>
+            <option value="1">food</option>
+            <option value="2">sausage</option>
+            </select>
+            </div>
+        h3.title Items
+        .item-container
+          .item-select
+            label(for='pdt') Pdt Id
+            input#pdt(type='text' placeholder='pdt ID' name='Pdt-Id')
+          .item-select
+            label(for='quantity') Quantity
+            input#quantity(type='number' name='quantity')
+          .item-select
+            label(for='unitp') Unit Price
+            input#unitp(type='number' name='unitprice')
+          .item-select
+            label(for='pd') Product ID
+            input#pd(type='text' placeholder='pdt ID' name='productId')
+          .item-select
+            label(for='qty') Quantity
+            input#qty(type='number' name='quantity')
+          .item-select
+            label(for='unitp') Unit Price
+            input#unitp(type='number' name='unitprice')
+        .butt
+          button.can(type='button') Cancel
+          button.submit(type='submit') Submit
