@@ -9,8 +9,11 @@ router.get('/',(req,res)=>{
 router.get('/sales',(req,res)=>{
     res.render('sales')
 })
-router.get('/loginn',(req,res)=>{
-    res.render('loginn')
+router.get('/register',(req,res)=>{
+    res.render('register')
+})
+router.get('/register',(req,res)=>{
+    console.log(req.body)
 })
 
 router.post('/sales',(req,res)=>{

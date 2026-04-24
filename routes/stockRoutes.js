@@ -14,4 +14,5 @@ router.get('/user', (req, res)=>{
 module.exports = router;
 
 // full path in routing
-// full path applies to browser URL , form action in the pug file
+// full paths applies to browser URL and form action  in the pug fileand redirect in the routes
+// the full path for any route that is inside;  /sometning/

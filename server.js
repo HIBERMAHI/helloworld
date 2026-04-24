@@ -1,5 +1,11 @@
 // 1Dependensies
 const path = require('path')
+// mongodb
+require('dotenv').config()
+
+const connectDb = require('./config/db')
+
+const mongoose = require('mongoose');
 
 const express = require('express');
 const expressSession = require('express-session')
@@ -10,6 +16,7 @@ const app = express();
 const port = 3000
 
 //3 configurations
+connectDb();
 app.set('view engine', 'pug')
 app.set('views engine', path.join(__dirname,'views'))
 
