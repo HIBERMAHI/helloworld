@@ -1,99 +1,15 @@
 doctype html
 head
   meta(charset='UTF-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title Document
-  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB' crossorigin='anonymous')
-  link(rel='stylesheet' href='index.css')
-.container-fluid
-  nav.navbar
-    .container-fluid
-      a.navbar-brand(href='#') &#x1F537;Company
-  .row
-    .col-3.mt-5.bg-succes
-      .list-group
-        a.list-group-item.list-group-item-action.active(href='#' aria-current='true')
-          | Dashboard
-        a.list-group-item.list-group-item-action(href='#') Stock Registration
-        a.list-group-item.list-group-item-action(href='#') PortFolio
-        a.list-group-item.list-group-item-action(href='#') Reports
-        a.list-group-item.list-group-item-action.disabled(href='#' aria-disabled='true') Settings
-      .boy
-        img.image.my-4(src='office.avif' width='90px' height='90px')
-        p.para.my-5 Manging Director
-    .col-9(my-5='')
-      h1.title22 Stock Registration Form
-      p.title22
-        | Register your stock details by filling in this form
-      form.form
-        h2.title Company Information
-        .row
-          .col
-            label.form-label(for='inputEmail4') Company Name
-            input.form-control(type='text' placeholder='Enter Company Name' aria-label='Enter Company Name')
-          .col
-            label.form-label(for='inputEmail4') Contact Person
-            input.form-control(type='tel' placeholder='Enter Contact Person' aria-label='Enter Contact  Person')
-        .row
-          .col
-            label.form-label(for='inputEmail4') Email Address
-            input.form-control(type='text' placeholder='Enter Email Address' aria-label='Enter Email Address')
-          .col
-            label.form-label(for='inputEmail4') Phone Number
-            input.form-control(type='tel' placeholder='Enter phone Number' aria-label='Enter phone Number')
-        h3.title Stock Details
-        .row.g-3
-          .col
-            label.form-label(for='stock symbol') Stock Symbol
-            input.form-control(type='text' placeholder='Enter Stock Symbol' aria-label='Enter Stock Symbol')
-          .col
-            label.form-label(for='isin') ISIN
-            input.form-control(type='text' placeholder='Enter ISIN Code' aria-label='Enter ISIN Code')
-        .row.g-3
-          .col
-            label.form-label(for='n of shares') Number Of Shares
-            input.form-control(type='text' placeholder='Enter Number Of Shares' aria-label='Enter Number Of Shares')
-          .col
-            label.form-label(for='share price') Share Price
-            input.form-control(type='number' placeholder='Enter Share Price' aria-label='Enter Share Price')
-        h3.title Stock Category
-        .row
-          .col
-            label.form-label(for='share price') Stock Category
-            select.form-select(aria-label='Default select example')
-              option(selected='') Select Category
-              option(value='1') Common Stock
-              option(value='2') Convertible Stock
-              option(value='3') Fonder&apos;s Stock
-          .col
-            label.form-label(for='share price') Market Exchange
-            select.form-select(aria-label='Default select example')
-              option(selected='') Select Exchange
-              option(value='1') Euronext
-              option(value='2') Tokyo Stock Exchange
-              option(value='3') London Stock Exchange
-        h5.title Description
-        .form-floating
-          textarea#floatingTextarea2.form-control(placeholder='Enter Stock Description' style='height: 100px')
-          label(for='floatingTextarea2') Enter Stock Description
-        h6.title Dates
-        .row
-          .col
-            label.form-label(for='date') Issue Date
-            input.form-control(type='date' placeholder='Select Issue Date' aria-label='Select Issue Date')
-          .col
-            label.form-label(for='inputEmail4') Maturity Date
-            input.form-control(type='date' placeholder='Select Maturity Date' aria-label='Select Maturity Date')
-        .form-check.my-3
-          input#checkChecked.form-check-input(type='checkbox' value='' checked='')
-          label.form-check-label.font-size-2rem(for='checkChecked')
-            | I agree to the terms and conditions
-        .row
-          #button.col
-            button.btn.btn-danger.btn-lg(type='button')
-              | Review Stock Information
-          #button.col
-            button.btn.btn-success.btn-lg(type='button')
-              | Register Stock Information
-script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js' integrity='sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r' crossorigin='anonymous')
-script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js' integrity='sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y' crossorigin='anonymous')
+  title Stock Registration
+  link(rel='stylesheet' href='/css/stock.css')
+.container
+  form.stock-form(action='/stock' method='post')
+    h2 Register New Stock
+    input(type='text' name='productName' placeholder='Product Name' required='')
+    input(type='text' name='productCode' placeholder='Product Code / ID' required='')
+    input(type='number' name='quantity' placeholder='Quantity Added' required='')
+    input(type='number' name='buyingPrice' placeholder='Buying Price' required='')
+    input(type='number' name='sellingPrice' placeholder='Selling Price' required='')
+    input(type='date' name='date' required='')
+    button(type='submit') Add Stock

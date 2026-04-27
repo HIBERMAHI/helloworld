@@ -1,0 +1,136 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Nyondo Store Manager Dashboard
+  link(rel='stylesheet' href='/css/storeDash.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
+// SIDEBAR
+.sidebar
+  h2
+    i.fa-solid.fa-store
+    |  Nyondo
+  p.role Store Manager Panel
+  a(href='#')
+    i.fa-solid.fa-gauge
+    |  Dashboard
+  a(href='#')
+    i.fa-solid.fa-boxes-stacked
+    |  Stock
+  a(href='#')
+    i.fa-solid.fa-chart-line
+    |  Reports
+// MAIN
+.main
+  // HEADER
+  header
+    h1 Store Manager Dashboard
+    p Monitor stock, sales, staff, and business performance
+  // ADD STOCK BUTTON
+  .top-action
+    button.add-btn
+      i.fa-solid.fa-plus
+      |  Add Stock
+  // SUMMARY CARDS
+  section.cards
+    .card
+      h3
+        i.fa-solid.fa-boxes-stacked
+        |  Total Stock
+      p 1,245 Items
+    .card
+      h3
+        i.fa-solid.fa-coins
+        |  Sales Today
+      p UGX 2,450,000
+    .card.danger
+      h3
+        i.fa-solid.fa-triangle-exclamation
+        |  Low Stock
+      p 18 Items
+  // INVENTORY TABLE (ORIGINAL STYLE)
+  section.table-box
+    h3
+      i.fa-solid.fa-boxes-stacked
+      |  Inventory Overview
+    table
+      tr
+        th Product
+        th Code
+        th Qty
+        th Buying
+        th Selling
+        th Date
+      tr
+        td Cement
+        td CEM-001
+        td 120
+        td 25,000
+        td 30,000
+        td 20/04/2026
+      tr
+        td Nails
+        td NAL-002
+        td 300
+        td 5,000
+        td 7,000
+        td 18/04/2026
+      tr
+        td Paint
+        td PNT-003
+        td 40
+        td 45,000
+        td 55,000
+        td 15/04/2026
+      tr
+        td Iron Sheets
+        td IRN-004
+        td 200
+        td 70,000
+        td 85,000
+        td 12/04/2026
+      tr
+        td Tiles
+        td TIL-005
+        td 150
+        td 10,000
+        td 13,000
+        td 10/04/2026
+      tr
+        td Glue
+        td GLU-006
+        td 90
+        td 8,000
+        td 10,000
+        td 08/04/2026
+  // NEW: EXTRA DASHBOARD INSIGHTS
+  section.grid
+    // LOW STOCK
+    .box.alert
+      h3
+        i.fa-solid.fa-triangle-exclamation
+        |  Low Stock Alerts
+      ul
+        li Cement - 5 bags left
+        li Glue - 3 units left
+        li Paint - 4 cans left
+    // BEST SELLING
+    .box.success
+      h3
+        i.fa-solid.fa-fire
+        |  Best Selling Products
+      ul
+        li Cement
+        li Iron Sheets
+        li Paint
+    // MANAGER MESSAGE
+    .box.message
+      h3
+        i.fa-solid.fa-note-sticky
+        |  Manager Message
+      p
+        | Always update stock daily after sales.
+        | Reorder low stock items early to avoid shortages.
+        | Monitor credit customers strictly.
+  // FOOTER
+  footer
+    p &copy; 2026 Nyondo General Hardware | Store Manager Panel

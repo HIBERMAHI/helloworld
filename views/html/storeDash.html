@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nyondo Store Manager Dashboard</title>
+
+  <link rel="stylesheet" href="/css/storeDash.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <h2><i class="fa-solid fa-store"></i> Nyondo</h2>
+  <p class="role">Store Manager Panel</p>
+
+  <a href="#"><i class="fa-solid fa-gauge"></i> Dashboard</a>
+  <a href="#"><i class="fa-solid fa-boxes-stacked"></i> Stock</a>
+  <a href="#"><i class="fa-solid fa-chart-line"></i> Reports</a>
+</div>
+
+<!-- MAIN -->
+<div class="main">
+
+  <!-- HEADER -->
+  <header>
+    <h1>Store Manager Dashboard</h1>
+    <p>Monitor stock, sales, staff, and business performance</p>
+  </header>
+
+  <!-- ADD STOCK BUTTON -->
+  <div class="top-action">
+    <button class="add-btn">
+      <i class="fa-solid fa-plus"></i> Add Stock
+    </button>
+  </div>
+
+  <!-- SUMMARY CARDS -->
+  <section class="cards">
+
+    <div class="card">
+      <h3><i class="fa-solid fa-boxes-stacked"></i> Total Stock</h3>
+      <p>1,245 Items</p>
+    </div>
+
+    <div class="card">
+      <h3><i class="fa-solid fa-coins"></i> Sales Today</h3>
+      <p>UGX 2,450,000</p>
+    </div>
+
+    <div class="card danger">
+      <h3><i class="fa-solid fa-triangle-exclamation"></i> Low Stock</h3>
+      <p>18 Items</p>
+    </div>
+
+  </section>
+
+  <!-- INVENTORY TABLE (ORIGINAL STYLE) -->
+  <section class="table-box">
+
+    <h3><i class="fa-solid fa-boxes-stacked"></i> Inventory Overview</h3>
+
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>Code</th>
+        <th>Qty</th>
+        <th>Buying</th>
+        <th>Selling</th>
+        <th>Date</th>
+      </tr>
+
+      <tr>
+        <td>Cement</td>
+        <td>CEM-001</td>
+        <td>120</td>
+        <td>25,000</td>
+        <td>30,000</td>
+        <td>20/04/2026</td>
+      </tr>
+
+      <tr>
+        <td>Nails</td>
+        <td>NAL-002</td>
+        <td>300</td>
+        <td>5,000</td>
+        <td>7,000</td>
+        <td>18/04/2026</td>
+      </tr>
+
+      <tr>
+        <td>Paint</td>
+        <td>PNT-003</td>
+        <td>40</td>
+        <td>45,000</td>
+        <td>55,000</td>
+        <td>15/04/2026</td>
+      </tr>
+
+      <tr>
+        <td>Iron Sheets</td>
+        <td>IRN-004</td>
+        <td>200</td>
+        <td>70,000</td>
+        <td>85,000</td>
+        <td>12/04/2026</td>
+      </tr>
+
+      <tr>
+        <td>Tiles</td>
+        <td>TIL-005</td>
+        <td>150</td>
+        <td>10,000</td>
+        <td>13,000</td>
+        <td>10/04/2026</td>
+      </tr>
+
+      <tr>
+        <td>Glue</td>
+        <td>GLU-006</td>
+        <td>90</td>
+        <td>8,000</td>
+        <td>10,000</td>
+        <td>08/04/2026</td>
+      </tr>
+
+    </table>
+
+  </section>
+
+  <!-- NEW: EXTRA DASHBOARD INSIGHTS -->
+
+  <section class="grid">
+
+    <!-- LOW STOCK -->
+    <div class="box alert">
+      <h3><i class="fa-solid fa-triangle-exclamation"></i> Low Stock Alerts</h3>
+      <ul>
+        <li>Cement - 5 bags left</li>
+        <li>Glue - 3 units left</li>
+        <li>Paint - 4 cans left</li>
+      </ul>
+    </div>
+
+    <!-- BEST SELLING -->
+    <div class="box success">
+      <h3><i class="fa-solid fa-fire"></i> Best Selling Products</h3>
+      <ul>
+        <li>Cement</li>
+        <li>Iron Sheets</li>
+        <li>Paint</li>
+      </ul>
+    </div>
+
+    <!-- MANAGER MESSAGE -->
+    <div class="box message">
+      <h3><i class="fa-solid fa-note-sticky"></i> Manager Message</h3>
+      <p>
+        Always update stock daily after sales. 
+        Reorder low stock items early to avoid shortages. 
+        Monitor credit customers strictly.
+      </p>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Nyondo General Hardware | Store Manager Panel</p>
+  </footer>
+
+</div>
+
+</body>
+</html>

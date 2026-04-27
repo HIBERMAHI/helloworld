@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stock Registration</title>
+
+  <link rel="stylesheet" href="/css/stockregistration.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<div class="form-container">
+
+  <h1><i class="fa-solid fa-boxes-stacked"></i> Stock Registration</h1>
+
+  <form action="/stock" method="POST">
+
+    <div class="grid-form">
+
+      <!-- PRODUCT IDENTIFICATION -->
+      <div class="input-box">
+        <label>Product Name</label>
+        <input type="text" name="productName" required>
+      </div>
+
+      <div class="input-box">
+        <label>Product Code</label>
+        <input type="text" name="productCode" required>
+      </div>
+
+      <div class="input-box">
+        <label>Category</label>
+        <input type="text" name="category" required>
+      </div>
+
+      <div class="input-box">
+        <label>Brand / Manufacturer</label>
+        <input type="text" name="brand">
+      </div>
+
+      <!-- STOCK DETAILS -->
+      <div class="input-box">
+        <label>Quantity Received</label>
+        <input type="number" name="quantity" required>
+      </div>
+
+      <div class="input-box">
+        <label>Minimum Stock Level</label>
+        <input type="number" name="minStockLevel" required>
+      </div>
+
+      <div class="input-box">
+        <label>Unit Type</label>
+        <input type="text" name="unit" placeholder="e.g bags, boxes, pieces">
+      </div>
+
+      <!-- PRICING -->
+      <div class="input-box">
+        <label>Buying Price</label>
+        <input type="number" name="buyingPrice" required>
+      </div>
+
+      <div class="input-box">
+        <label>Selling Price</label>
+        <input type="number" name="sellingPrice" required>
+      </div>
+
+      <!-- SUPPLIER -->
+      <div class="input-box">
+        <label>Supplier Name</label>
+        <input type="text" name="supplierName">
+      </div>
+
+      <div class="input-box">
+        <label>Supplier Contact</label>
+        <input type="text" name="supplierContact">
+      </div>
+
+      <div class="input-box">
+        <label>Supplier Location</label>
+        <input type="text" name="supplierLocation">
+      </div>
+
+      <!-- DATES -->
+      <div class="input-box">
+        <label>Date Received</label>
+        <input type="date" name="dateReceived" required>
+      </div>
+
+      <div class="input-box">
+        <label>Expiry Date (if applicable)</label>
+        <input type="date" name="expiryDate">
+      </div>
+
+    </div>
+
+    <!-- SYSTEM FIELDS -->
+    <div class="input-box full">
+      <label>Stock Description / Notes</label>
+      <textarea name="description" placeholder="Extra details about product..."></textarea>
+    </div>
+
+    <!-- AUTO SYSTEM DATA (optional backend use) -->
+    <input type="hidden" name="status" value="Available">
+
+    <!-- SUBMIT -->
+    <button type="submit">
+      <i class="fa-solid fa-floppy-disk"></i> Save Stock
+    </button>
+
+  </form>
+
+</div>
+
+</body>
+</html>

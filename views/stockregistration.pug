@@ -1,0 +1,69 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  title Stock Registration
+  link(rel='stylesheet' href='/css/stockregistration.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css')
+.form-container
+  h1
+    i.fa-solid.fa-boxes-stacked
+    |  Stock Registration
+  form(action='/stock' method='POST')
+    .grid-form
+      // PRODUCT IDENTIFICATION
+      .input-box
+        label Product Name
+        input(type='text' name='productName' required='')
+      .input-box
+        label Product Code
+        input(type='text' name='productCode' required='')
+      .input-box
+        label Category
+        input(type='text' name='category' required='')
+      .input-box
+        label Brand / Manufacturer
+        input(type='text' name='brand')
+      // STOCK DETAILS
+      .input-box
+        label Quantity Received
+        input(type='number' name='quantity' required='')
+      .input-box
+        label Minimum Stock Level
+        input(type='number' name='minStockLevel' required='')
+      .input-box
+        label Unit Type
+        input(type='text' name='unit' placeholder='e.g bags, boxes, pieces')
+      // PRICING
+      .input-box
+        label Buying Price
+        input(type='number' name='buyingPrice' required='')
+      .input-box
+        label Selling Price
+        input(type='number' name='sellingPrice' required='')
+      // SUPPLIER
+      .input-box
+        label Supplier Name
+        input(type='text' name='supplierName')
+      .input-box
+        label Supplier Contact
+        input(type='text' name='supplierContact')
+      .input-box
+        label Supplier Location
+        input(type='text' name='supplierLocation')
+      // DATES
+      .input-box
+        label Date Received
+        input(type='date' name='dateReceived' required='')
+      .input-box
+        label Expiry Date (if applicable)
+        input(type='date' name='expiryDate')
+    // SYSTEM FIELDS
+    .input-box.full
+      label Stock Description / Notes
+      textarea(name='description' placeholder='Extra details about product...')
+    // AUTO SYSTEM DATA (optional backend use)
+    input(type='hidden' name='status' value='Available')
+    // SUBMIT
+    button(type='submit')
+      i.fa-solid.fa-floppy-disk
+      |  Save Stock

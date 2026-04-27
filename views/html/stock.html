@@ -2,250 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="index.css" />
+    <title>Stock Registration</title>
+    <link rel="stylesheet" href="/css/stock.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <nav class="navbar">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">🔷Company</a>
-        </div>
-      </nav>
-      <div class="row">
-        <div class="col-3 mt-5  bg-succes">
-          <div class="list-group">
-            <a
-              href="#"
-              class="list-group-item list-group-item-action active"
-              aria-current="true"
-            >
-              Dashboard
-            </a>
-            <a href="#" class="list-group-item list-group-item-action"
-              >Stock Registration</a
-            >
-            <a href="#" class="list-group-item list-group-item-action"
-              >PortFolio</a
-            >
-            <a href="#" class="list-group-item list-group-item-action"
-              >Reports</a
-            >
-            <a
-              href="#"
-              class="list-group-item list-group-item-action disabled"
-              aria-disabled="true"
-              >Settings</a
-            >
-          </div>
-          <div class="boy">
-            <img
-              class="image my-4"
-              src="office.avif"
-              width="90px"
-              height="90px"
-            />
-            <p class="para my-5">Manging Director</p>
-          </div>
-        </div>
-        <div class="col-9" my-5>
-          <h1 class="title22">Stock Registration Form</h1>
-          <p class="title22">
-            Register your stock details by filling in this form
-          </p>
-          <form class="form">
-            <h2 class="title">Company Information</h2>
-            <div class="row">
-              <div class="col">
-                <label for="inputEmail4" class="form-label">Company Name</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Company Name"
-                  aria-label="Enter Company Name"
-                />
-              </div>
-              <div class="col">
-                <label for="inputEmail4" class="form-label"
-                  >Contact Person</label
-                >
-                <input
-                  type="tel"
-                  class="form-control"
-                  placeholder="Enter Contact Person"
-                  aria-label="Enter Contact  Person"
-                />
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <label for="inputEmail4" class="form-label"
-                  >Email Address</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Email Address"
-                  aria-label="Enter Email Address"
-                />
-              </div>
-              <div class="col">
-                <label for="inputEmail4" class="form-label">Phone Number</label>
-                <input
-                  type="tel"
-                  class="form-control"
-                  placeholder="Enter phone Number"
-                  aria-label="Enter phone Number"
-                />
-              </div>
-            </div>
-            <h3 class="title">Stock Details</h3>
-            <div class="row g-3">
-              <div class="col">
-                <label for="stock symbol" class="form-label"
-                  >Stock Symbol</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Stock Symbol"
-                  aria-label="Enter Stock Symbol"
-                />
-              </div>
-              <div class="col">
-                <label for="isin" class="form-label">ISIN</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter ISIN Code"
-                  aria-label="Enter ISIN Code"
-                />
-              </div>
-            </div>
-            <div class="row g-3">
-              <div class="col">
-                <label for="n of shares" class="form-label"
-                  >Number Of Shares</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Enter Number Of Shares"
-                  aria-label="Enter Number Of Shares"
-                />
-              </div>
-              <div class="col">
-                <label for="share price" class="form-label">Share Price</label>
-                <input
-                  type="number"
-                  class="form-control"
-                  placeholder="Enter Share Price"
-                  aria-label="Enter Share Price"
-                />
-              </div>
-            </div>
-            <h3 class="title">Stock Category</h3>
-            <div class="row">
-              <div class="col">
-                <label for="share price" class="form-label"
-                  >Stock Category</label
-                >
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Select Category</option>
-                  <option value="1">Common Stock</option>
-                  <option value="2">Convertible Stock</option>
-                  <option value="3">Fonder's Stock</option>
-                </select>
-              </div>
-              <div class="col">
-                <label for="share price" class="form-label"
-                  >Market Exchange</label
-                >
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Select Exchange</option>
-                  <option value="1">Euronext</option>
-                  <option value="2">Tokyo Stock Exchange</option>
-                  <option value="3">London Stock Exchange</option>
-                </select>
-              </div>
-            </div>
-            <h5 class="title">Description</h5>
-            <div class="form-floating">
-              <textarea
-                class="form-control"
-                placeholder="Enter Stock Description"
-                id="floatingTextarea2"
-                style="height: 100px"
-              ></textarea>
-              <label for="floatingTextarea2">Enter Stock Description</label>
-            </div>
-            <h6 class="title">Dates</h6>
-            <div class="row">
-              <div class="col">
-                <label for="date" class="form-label">Issue Date</label>
-                <input
-                  type="date"
-                  class="form-control"
-                  placeholder="Select Issue Date"
-                  aria-label="Select Issue Date"
-                />
-              </div>
-              <div class="col">
-                <label for="inputEmail4" class="form-label"
-                  >Maturity Date</label
-                >
-                <input
-                  type="date"
-                  class="form-control"
-                  placeholder="Select Maturity Date"
-                  aria-label="Select Maturity Date"
-                />
-              </div>
-            </div>
-            <div class="form-check my-3">
-              <input
-                class="form-check-input"
-                type="checkbox"
-                value=""
-                id="checkChecked"
-                checked
-              />
-              <label class="form-check-label font-size-2rem" for="checkChecked">
-                I agree to the terms and conditions
-              </label>
-            </div>
-            <div class="row">
-              <div class="col" id="button">
-                <button type="button" class="btn btn-danger btn-lg">
-                  Review Stock Information
-                </button>
-              </div>
-              <div class="col" id="button">
-                <button type="button" class="btn btn-success btn-lg">
-                  Register Stock Information
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
+    <div class="container">
+      <form class="stock-form" action="/stock" method="post" >
+        <h2>Register New Stock</h2>
+
+        <input
+          type="text"
+          name="productName"
+          placeholder="Product Name"
+          required
+        />
+
+        <input
+          type="text"
+          name="productCode"
+          placeholder="Product Code / ID"
+          required
+        />
+
+        <input
+          type="number"
+          name="quantity"
+          placeholder="Quantity Added"
+          required
+        />
+
+        <input
+          type="number"
+          name="buyingPrice"
+          placeholder="Buying Price"
+          required
+        />
+
+        <input
+          type="number"
+          name="sellingPrice"
+          placeholder="Selling Price"
+          required
+        />
+
+        <input type="date" name="date" required />
+
+        <button type="submit">Add Stock</button>
+      </form>
     </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
-      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
